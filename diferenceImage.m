@@ -7,8 +7,8 @@
 %  - verificar as baixas frequencias e comparar com um limiar 
 %%
 function [dif] = diferenceImage(img1, img2, s)
- %   img1 =  butterworthbpf(img1 ,40,120,4);
- %   img2 =  butterworthbpf(img2 ,40,120,4);
+%     img1 =  butterworthbpf(img1 ,40,120,4);
+%     img2 =  butterworthbpf(img2 ,40,120,4);
     dif = uint8(img1) - uint8(img2);      
     for i = 1: size(dif,1),
         for j = 1: size(dif,2),            
